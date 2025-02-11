@@ -76,7 +76,7 @@ const Footer = () => {
         
         {/* Row 4: Copyright */}
         <div className="footer-bottom">
-          <p>© 2024 Your Company Name. All rights reserved.</p>
+          <p>© 2024 Your Company Name. Sanjeev All rights reserved.</p>
         </div>
       </div>
     </footer>
