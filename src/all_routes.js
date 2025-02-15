@@ -5,6 +5,7 @@ import Products from './pages/products'
 import Cars from './pages/cars'
 import About from './pages/About'
 import Blog from './pages/Blog'
+import HelicopterBooking from './pages/HelicopterBooking'
 export default function all_routes() {
   let  all_allroutes = createBrowserRouter(
     [
@@ -29,10 +30,11 @@ export default function all_routes() {
         {
           path:'blog',
           element: <Blog />
-        }
+        },{
+          path:'helicopter',
+          element:<HelicopterBooking   />     }
     ]
   )
   return all_allroutes;
 
 }
-
