@@ -32,29 +32,27 @@ const HeroSection = () => {
 };
 
 // Card Component
-const HelicopterCard = ({ title, description, price, features }) => {
+const HelicopterCard = ({ title, description, price, image, features }) => {
   return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300">
-      <img src="/api/placeholder/400/250" alt={title} className="w-full h-48 object-cover" />
-      <div className="p-6">
-        <h3 className="text-2xl font-bold mb-2">{title}</h3>
-        <p className="text-gray-600 mb-4">{description}</p>
-        <p className="text-yellow-500 text-2xl font-bold mb-4">{price}/hour</p>
-        <div className="flex justify-center space-x-6 mb-6">
-          {features.map((feature, idx) => (
-            <div key={idx} className="text-center">
-              <i className={`${feature.icon} text-yellow-500 text-xl mb-2`}></i>
-              <span className="block text-sm text-gray-600">{feature.text}</span>
+    <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+      <img src={image} alt={title} className="w-full h-48 object-cover" />
+      <div className="p-4">
+        <h3 className="text-xl font-bold">{title}</h3>
+        <p className="text-gray-600">{description}</p>
+        <p className="text-lg font-semibold mt-2">{price}</p>
+        <div className="flex gap-2 mt-3">
+          {features.map((feature, index) => (
+            <div key={index} className="flex items-center gap-1">
+              <i className={feature.icon}></i>
+              <span>{feature.text}</span>
             </div>
           ))}
         </div>
-        <button className="w-full bg-yellow-500 text-white py-3 rounded-lg font-bold hover:bg-yellow-600 transition-colors">
-          Book Now
-        </button>
       </div>
     </div>
   );
 };
+
 
 // Stats Component
 const StatCard = ({ icon, title, description }) => {
@@ -115,6 +113,7 @@ const HelicopterBooking = () => {
       title: "VIP Helicopter",
       description: "A luxury helicopter for your business meetings or exclusive events.",
       price: "$1,500",
+      image: "https://www.aviationtoday.com/wp-content/uploads/2019/06/download-2.jpeg",
       features: [
         { icon: "fas fa-cogs", text: "Luxury" },
         { icon: "fas fa-users", text: "6 Seats" },
@@ -125,6 +124,7 @@ const HelicopterBooking = () => {
       title: "Executive Helicopter",
       description: "Perfect for your business trips or private tours with utmost comfort.",
       price: "$1,200",
+      image: "https://amaroaviation.com/wp-content/uploads/2024/05/Bell-429.jpg",
       features: [
         { icon: "fas fa-cogs", text: "Comfort" },
         { icon: "fas fa-users", text: "4 Seats" },
@@ -147,41 +147,43 @@ const HelicopterBooking = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
-    <Navbar />
-    <Hero />
-  
-    {/* Helicopter Cards Section */}
-    <div className="flex flex-col items-center justify-center min-h-screen">
-      <div className="container mx-auto px-6 py-16">
-        <h2 className="text-4xl font-bold text-center mb-12">Our Helicopters</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {helicopterCards.map((card, index) => (
-            <HelicopterCard key={index} {...card} />
-          ))}
+    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center">
+      <Navbar />
+      <Hero />
+
+      {/* Helicopter Cards Section */}
+      <div className="flex flex-col items-center justify-center min-h-screen">
+        <div className="container mx-auto px-6 py-16">
+          <h2 className="text-4xl font-bold text-center mb-12">Our Helicopters</h2>
+          <div className="flex flex-wrap justify-center gap-8">
+            {helicopterCards.map((card, index) => (
+              <HelicopterCard key={index} {...card} />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
-  
-    {/* Stats Section */}
-    <div className="bg-gray-100 py-16">
-      <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-12">Our Achievements</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {stats.map((stat, index) => (
-            <StatCard key={index} {...stat} />
-          ))}
-        </div>
-      </div>
-    </div>
-  
-    {/* Booking Section */}
-    <div className="py-16 bg-white">
-      <ContactForm />
-      <Footer />
+
+      {/* Stats Section */}
+      <div className="bg-gray-100 flex items-center justify-center h-screen w-full">
+  <div className="container mx-auto px-6 text-center">
+    <h2 className="text-4xl font-bold mb-12">Our Achievements</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+      {stats.map((stat, index) => (
+        <StatCard key={index} {...stat} />
+      ))}
     </div>
   </div>
-  
+</div>
+
+
+
+
+      {/* Booking Section */}
+      <div className="py-16 bg-white w-full">
+        <ContactForm />
+        <Footer />
+      </div>
+    </div>
   );
 };
 

@@ -75,47 +75,54 @@ export default function CarComponent() {
   };
 
   return (
-    <div className="container">
-      {/* Search Bar */}
-      <div className="search-bar">
-        <input 
-          type="text" 
-          placeholder="Enter car name" 
-          value={departure} 
-          onChange={(e) => setDeparture(e.target.value)}
-          className="dropdown"
-        />
+    <div className="container mx-auto px-4 py-8">
+    {/* Search Bar */}
+    <div className="flex justify-center gap-4 mb-8">
+      <input 
+        type="text" 
+        placeholder="Enter car name" 
+        value={departure} 
+        onChange={(e) => setDeparture(e.target.value)}
+        className="px-4 py-2 border rounded-md w-64"
+      />
 
-        <input 
-          type="number" 
-          placeholder="Max Price (INR)" 
-          value={destination} 
-          onChange={(e) => setDestination(e.target.value)}
-          className="dropdown"
-        />
+      <input 
+        type="number" 
+        placeholder="Max Price (INR)" 
+        value={destination} 
+        onChange={(e) => setDestination(e.target.value)}
+        className="px-4 py-2 border rounded-md w-64"
+      />
 
-        <button onClick={handleFilter} className="search-button">
-          Search
-        </button>
-      </div>
+      <button 
+        onClick={handleFilter} 
+        className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+      >
+        Search
+      </button>
+    </div>
 
-      {/* No Cars Message */}
-      {filteredJets.length === 0 ? (
-        <p className="no-flights">No cars available for that filter.</p>
-      ) : (
-        <div className="card-container">
+    {/* No Cars Message */}
+    {filteredJets.length === 0 ? (
+      <p className="text-center text-gray-600">No cars available for that filter.</p>
+    ) : (
+      <div className="flex justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl">
           {filteredJets.map((car, index) => (
-            <div key={index} className="card">
-              <img src={car.img} alt={car.title} className="card-image" />
-              <h3 className="card-title">{car.title}</h3>
-              <p className="card-description">{car.description}</p>
-              <p><strong>Travel Time:</strong> {car.totalTime}</p>
-              <p><strong>Passengers:</strong> {car.pax}</p>
-              <p className="price">{car.price}</p>
+            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+              <img src={car.img} alt={car.title} className="w-full h-48 object-cover" />
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">{car.title}</h3>
+                <p className="text-gray-600 mb-2">{car.description}</p>
+                <p className="mb-1"><strong>Travel Time:</strong> {car.totalTime}</p>
+                <p className="mb-1"><strong>Passengers:</strong> {car.pax}</p>
+                <p className="text-green-600 font-semibold">{car.price}</p>
+              </div>
             </div>
           ))}
         </div>
-      )}
-    </div>
+      </div>
+    )}
+  </div>
   );
 }
