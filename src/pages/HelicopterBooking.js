@@ -1,31 +1,14 @@
 
 
 import React, { useState } from 'react';
+import Navbar from '../components/Navbar';
+import Hero from './hero';
+import MainContent from './MainContent';
+import ContactForm from './Contactform';
+import Footer from './footer';
 
 // Navigation Component
-const Navbar = () => {
-  return (
-    <nav className="fixed w-full bg-white shadow-lg z-50">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
-            <img src="/api/placeholder/150/50" alt="Logo" className="h-8 w-auto" />
-          </div>
-          
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">About</a>
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">Services</a>
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">
-              Book Now
-            </button>
-          </div>
-        </div>
-      </div>
-    </nav>
-  );
-};
+
 
 // Hero Section Component
 const HeroSection = () => {
@@ -165,10 +148,11 @@ const HelicopterBooking = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navbar />
-      <HeroSection />
-      
-      {/* Helicopter Cards Section */}
+    <Navbar />
+    <Hero />
+  
+    {/* Helicopter Cards Section */}
+    <div className="flex flex-col items-center justify-center min-h-screen">
       <div className="container mx-auto px-6 py-16">
         <h2 className="text-4xl font-bold text-center mb-12">Our Helicopters</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -177,24 +161,27 @@ const HelicopterBooking = () => {
           ))}
         </div>
       </div>
-
-      {/* Stats Section */}
-      <div className="bg-gray-100 py-16">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-12">Our Achievements</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {stats.map((stat, index) => (
-              <StatCard key={index} {...stat} />
-            ))}
-          </div>
+    </div>
+  
+    {/* Stats Section */}
+    <div className="bg-gray-100 py-16">
+      <div className="container mx-auto px-6">
+        <h2 className="text-4xl font-bold text-center mb-12">Our Achievements</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {stats.map((stat, index) => (
+            <StatCard key={index} {...stat} />
+          ))}
         </div>
       </div>
-
-      {/* Booking Section */}
-      <div className="py-16 bg-white">
-        <BookingForm />
-      </div>
     </div>
+  
+    {/* Booking Section */}
+    <div className="py-16 bg-white">
+      <ContactForm />
+      <Footer />
+    </div>
+  </div>
+  
   );
 };
 
