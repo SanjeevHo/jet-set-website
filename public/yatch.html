@@ -1,0 +1,898 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Private Yacht Booking</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+        <title>JetSetGo | Private Jet Service</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="You Ultimate Destination Book You Private Jet And Enjoy Your Wonderful Journey ">
+        <meta name="keywords" content="luxury travel, private jets, yacht charters, helicopter rentals">
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="index, follow">
+        <meta name="bingbot" content="index, follow">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="author" content="Karan Kumar">
+        <meta name="copyright" content="2024 Setgo Travel">
+        <meta name="distribution" content="global">
+        <meta name="language" content="en">
+        <meta http-equiv="refresh" content="30">
+        <meta name="rating" content="general">
+        <meta name="theme-color" content="#000000">
+        <meta name="msvalidate.01" content="your-verification-code"> <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Setgo - Luxury Travel by Private Jets &amp; Yachts">
+        <meta property="og:description" content="Experience the ultimate luxury travel with Setgo. Book private jets, yachts, and helicopters today.">
+        <meta property="og:url" content="https://www.setgotravel.com">
+        <meta property="og:image" content="https://www.setgotravel.com/images/private-jet.jpg">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:site_name" content="Setgo Travel"> <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Setgo Luxury Travel Services">
+        <meta name="twitter:description" content="Fly with Setgo in style, offering private jets and luxury yachts for your travel needs.">
+        <meta name="twitter:image" content="https://www.setgotravel.com/images/private-jet.jpg">
+        <meta name="twitter:site" content="@SetgoTravel"> <!-- Structured Data -->
+        <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Setgo Travel",
+      "url": "https://www.setgotravel.com",
+      "logo": "https://www.setgotravel.com/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-555-5555",
+        "contactType": "Customer Support"
+      }
+    }
+    </script> <!-- Miscellaneous Meta Tags -->
+        <meta name="generator" content="Cyber Zone Academy">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="application-name" content="Setgo App">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin="anonymous">
+        <link rel="preconnect" href="https://unpkg.com/" crossorigin="anonymous">
+        <link rel="preconnect" href="https://ajax.googleapis.com/" crossorigin="anonymous">
+        <link rel="preconnect" href="https://cdn.jsdelivr.net/" crossorigin="anonymous">
+        <link rel="stylesheet" href="./res/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/assets/css/textillate.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@latest/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <style>
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+    width: 100%;
+    padding: 0;
+    background: #ecf0f3;
+    z-index: 999;
+    position: fixed;
+    height: 70px;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1, inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+}
+nav .menu {
+    max-width: 1270px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu .logo img {
+    top: 5px;
+    margin: 10px;
+    height: 50px;
+    filter: invert(1);
+    transition: transform 0.3s ease;
+}
+.menu .logo img:hover {
+    transform: scale(1.1);
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.menu ul a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #31344b;
+    font-weight: 400;
+    border-radius: 10px;
+    display: inline-flex;
+    padding: 12px 16px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.menu ul a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: #3498db;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.menu ul a:hover:before,
+.menu ul a:focus:before {
+    transform: scaleX(1);
+}
+.menu ul a:hover,
+.menu ul a:focus,
+.menu ul a:active {
+    color: #3498db;
+}
+.menu ul a.active {
+    color: #3498db;
+    font-weight: 600;
+}
+nav label.btn {
+    color: #31344b;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+nav label.cancel {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+#check {
+    display: none;
+}
+.login-button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.login-button:hover {
+    background-color: #66B2FF;
+    transform: translateY(-3px);
+}
+.menu li {
+    position: relative;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.menu li:hover .sub-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+.sub-menu li {
+    margin: 0;
+}
+.sub-menu a {
+    padding: 10px 20px;
+    color: #31344b;
+    white-space: nowrap;
+    transition: background 0.3s ease;
+}
+.sub-menu a:hover {
+    background: #f0f0f0;
+}
+@media (max-width: 940px) {
+    .menu ul {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    max-width: 400px;
+    padding-top: 45px;
+    height: 100%;
+    background: #ecf0f3;
+    z-index: 12;
+    transition: all 0.3s ease;
+}
+.menu ul a {
+    display: block;
+    font-size: 23px;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+nav label.bars {
+    display: block;
+}
+#check:checked ~ label.bars {
+    display: none;
+}
+#check:checked ~ ul label.cancel {
+    display: block;
+}
+#check:checked ~ ul {
+    left: 0;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 8px;
+    border-radius: 8px;
+    transition: max-height 0.3s ease;
+}
+.menu li:hover .sub-menu {
+    display: block;
+    max-height: 300px;
+    transition: max-height 0.3s ease;
+}
+.sub-menu li {
+    margin: 0;
+}
+.sub-menu a {
+    padding: 10px;
+    color: #31344b;
+    white-space: nowrap;
+}
+}
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #000; /* Fallback background color */
+            color: #fff;
+            overflow: hidden;
+        }
+        /* Semi-transparent black overlay */
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* 50% transparent black */
+            z-index: 1; /* Make sure overlay is behind content */
+        }
+        .hero-content {
+            z-index: 2;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        .cta-btn {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: #00aaff;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+        .cta-btn:hover {
+            background-color: #0088cc;
+        }
+        /* Desktop */
+        @media (min-width: 768px) {
+            .hero {
+                background-image: url('./assets/images/hero-yacht-bg.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+        }
+        /* Mobile */
+        @media (max-width: 767px) {
+            .hero {
+                background-image: none;
+                height: 300px; /* Adjust height for mobile */
+            }
+            .hero h1 {
+                font-size: 2em;
+            }
+            .hero p {
+                font-size: 1em;
+            }
+        }
+        
+          .yacht-specifications {
+        padding: 50px 20px;
+        text-align: center;
+        background-color: #f4f4f4;
+    }
+    .yacht-specifications h2 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        color: #333;
+    }
+    .specs-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .spec-box {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        width: 250px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+    .spec-box:hover {
+        transform: translateY(-5px);
+    }
+    .spec-box i {
+        font-size: 3em;
+        color: #00aaff;
+        margin-bottom: 10px;
+    }
+    .spec-box h3 {
+        font-size: 1.5em;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    .spec-box p {
+        font-size: 1.2em;
+        color: #666;
+    }
+    /* Responsive Design */
+    @media (max-width: 767px) {
+        .spec-box {
+            width: 100%;
+        }
+    }
+    .container-book {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+.container-book h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.booking-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.form-group textarea {
+  resize: vertical;
+}
+.submit-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 14px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+.fas {
+  margin-right: 8px;
+}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container-book {
+    width: 90%;
+  }
+  .form-group {
+    display: block;
+    width: 100%;
+  }
+  .submit-btn {
+    padding: 12px 20px;
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+  }
+}
+/* Row Layout for Larger Forms */
+@media (min-width: 768px) {
+  .form-group label {
+    width: 25%;
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+  }
+  .form-group textarea {
+    width: 100%;
+  }
+  .form-group.long-input input,
+  .form-group.long-input select,
+  .form-group.long-input textarea {
+    width: 100%;
+  }
+}
+#custom-footer {
+    background-color: #003366;
+    color: #ecf0f3;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Row styling for desktop*/
+    .footer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.footer-column {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+}
+.footer-logo img {
+    width: 150px;
+}
+.footer-description p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.footer-line {
+    border: 0;
+    height: 1px;
+    background: #66B2FF;
+    margin: 20px 0;
+}
+/* Footer links columns*/
+    .footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-links ul li {
+    margin: 5px 0;
+}
+.footer-links ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+.footer-links ul li a:hover {
+    color: #66B2FF;
+}
+/* Social icons section*/
+    .social-icons a {
+    margin-right: 15px;
+    font-size: 20px;
+    color: #FFD700;
+    transition: color 0.3s ease;
+}
+.social-icons a:hover {
+    color: #66B2FF;
+}
+/* Contact information section*/
+    .contact-info {
+    font-size: 16px;
+}
+.contact-info div {
+    margin-bottom: 10px;
+}
+.contact-info i {
+    margin-right: 10px;
+}
+/* Footer bottom*/
+    .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    .footer-row {
+    flex-direction: column;
+    text-align: center;
+}
+.footer-description {
+    margin: 20px 0;
+}
+.footer-links ul {
+    justify-content: center;
+}
+.footer-social-contact {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+}
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    z-index: 999;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #003366;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.floating-btn:hover {
+    transform: scale(1.1);
+    background-color: #005599;
+}
+.circle-progress {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #003366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+.circle-progress:hover {
+    background-color: #002244;
+}
+#cdn-icon {
+    font-size: 30px;
+    color: #fff;
+    z-index: 2;
+}
+.progress-ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform: rotate(-90deg);
+}
+.progress-ring__circle {
+    stroke-dasharray: 226;
+    stroke-dashoffset: 226;
+    transition: stroke-dashoffset 0.5s ease;
+    stroke-width: 6;
+    fill: none;
+    stroke: url(#grad1);
+}
+<svg width="0" height="0"> <defs> <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"> <stop offset="0%" style="stop-color:#ff66cc;
+    stop-opacity:1" /> <stop offset="50%" style="stop-color:#ff9933;
+    stop-opacity:1" /> <stop offset="100%" style="stop-color:#66ccff;
+    stop-opacity:1" /> </linearGradient> </defs>
+</svg>
+@media (max-width: 768px) {
+    .floating-btn {
+    width: 60px;
+    height: 60px;
+}
+.circle-progress {
+    width: 60px;
+    height: 60px;
+}
+#cdn-icon {
+    font-size: 24px;
+}
+}
+.faq-container {
+    max-width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ecf0f3;
+    /* Light background color*/
+    border-radius: 10px;
+}
+.faq-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #1D2C6D;
+    /* Main theme color*/
+    text-align: center;
+}
+.faq-item {
+    border-bottom: 1px solid #d1d1d1;
+    /* Slightly darker border*/
+    
+}
+.faq-question {
+    padding: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    color: #31344b;
+    /* Dark text color*/
+    transition: color 0.3s ease;
+    position: relative;
+}
+.faq-question:hover {
+    color: #3498db;
+    /* Hover color*/
+    
+}
+.faq-question i {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    right: 18px;
+}
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease, padding 0.6s ease;
+    padding: 0 18px;
+    background-color: #f9f9f9;
+    /* Slightly off-white background*/
+    border-top: 1px solid #d1d1d1;
+    /* Slightly darker border*/
+    
+}
+.faq-answer p {
+    margin: 15px 0;
+    line-height: 1.6;
+    color: #666;
+    /* Slightly lighter text for answers*/
+    
+}
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    /* Adjust based on content*/
+    padding: 18px;
+}
+.faq-item.active .faq-question i {
+    transform: rotate(45deg);
+}
+    
+ </style>
+    </head>
+    <body>
+        <nav>
+            <div class="menu"><input type="checkbox" id="check">
+                <div class="logo">
+                    <a href="/"><img src="./assets/images/logo.png" alt="Logo"></a>
+                </div>
+                <ul><label class="btn cancel" for="check"><i class="fas fa-times"></i></label>
+                    <li><a href="/" class="active">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="#explore-sec">Explore</a>
+                        <ul class="sub-menu">
+                            <li><a href="/p">Jets</a></li>
+                            <li><a href="/helicopter.html">Chooper</a></li>
+                            <li><a href="/yatch.html">YATCH</a></li>
+                            <li><a href="/car.html">Car</a></li>
+                        </ul></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="#contact-sec">Contact</a></li>
+                    <li><a><button class="login-button">Enquiry</button></a></li>
+                </ul> <label for="check" class="btn bars"><i class="fas fa-bars"></i></label>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="hero-overlay"></div> <!-- Overlay added here -->
+            <div class="hero-content">
+                <h1>Book Your Dream Yacht</h1>
+                <p>Experience luxury on the waves with a private yacht just for you!</p> <button class="cta-btn">Book Now</button>
+            </div>
+        </section>
+        <section class="yacht-specifications">
+            <h2>Yacht Specifications</h2>
+            <div class="specs-container">
+                <div class="spec-box"><i class="fas fa-tachometer-alt"></i>
+                    <h3>Speed</h3>
+                    <p>30 Knots</p>
+                </div>
+                <div class="spec-box"><i class="fas fa-users"></i>
+                    <h3>Capacity</h3>
+                    <p>12 Passengers</p>
+                </div>
+                <div class="spec-box"><i class="fas fa-anchor"></i>
+                    <h3>Length</h3>
+                    <p>80 Feet</p>
+                </div>
+                <div class="spec-box"><i class="fas fa-cogs"></i>
+                    <h3>Engine</h3>
+                    <p>2 x 1200 HP</p>
+                </div>
+            </div>
+        </section>
+        <section class="yacht-booking-section">
+            <div class="container-book">
+                <h2 class="section-title"><i class="fas fa-ship"></i> Yacht Booking Form</h2>
+                <form action="#" class="booking-form">
+                    <div class="form-group"><label for="name"><i class="fas fa-user"></i> Full Name</label> <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group"><label for="email"><i class="fas fa-envelope"></i> Email Address</label> <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group"><label for="phone"><i class="fas fa-phone"></i> Phone Number</label> <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group"><label for="destination"><i class="fas fa-map-marker-alt"></i> Destination</label> <select id="destination" name="destination" required> <option value="">Select Destination</option> <option value="caribbean">Caribbean</option> <option value="mediterranean">Mediterranean</option> <option value="bahamas">Bahamas</option> <option value="maldives">Maldives</option> </select>
+                    </div>
+                    <div class="form-group"><label for="date"><i class="fas fa-calendar-alt"></i> Date of Booking</label> <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group"><label for="time"><i class="fas fa-clock"></i> Preferred Time</label> <input type="time" id="time" name="time" required>
+                    </div>
+                    <div class="form-group"><label for="message"><i class="fas fa-comment-alt"></i> Special Requests</label> <textarea id="message" name="message" rows="4" placeholder="Any special requests or preferences?" required></textarea>
+                    </div> <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Book Now</button>
+                </form>
+            </div>
+        </section>
+                <div class="faq-container">
+            <h1>Frequently Asked Questions</h1>
+            <div id="faq-list"></div>
+        </div>
+        <footer id="custom-footer">
+            <div class="footer-container">
+                <!-- Row 1: Logo and Description -->
+                <div class="footer-row">
+                    <div class="footer-column">
+                        <div class="footer-logo">
+                            <img src="./assets/images/logo.png" alt="Company Logo">
+                        </div>
+                    </div>
+                    <div class="footer-column footer-description">
+                        <p>Your company's tagline or brief description goes here. Highlight your services or mission, providing a brief overview of your expertise.</p>
+                    </div>
+                </div> <!-- Horizontal Line -->
+                <hr class="footer-line"> <!-- Row 2: Links Section -->
+                <div class="footer-row">
+                    <div class="footer-column footer-links">
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column footer-links">
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column footer-links">
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div> <!-- Horizontal Line -->
+                <hr class="footer-line"> <!-- Row 3: Social Icons and Contact Info -->
+                <div class="footer-row">
+                    <div class="footer-column social-icons">
+                        <a href="#"><i class="fab fa-whatsapp"></i></a> <a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="footer-column contact-info">
+                        <div class="location">
+                            <i class="fas fa-map-marker-alt"></i> 123 Luxury Lane, City, Country
+                        </div>
+                        <div class="phone">
+                            <i class="fas fa-phone-alt"></i> +123 456 7890
+                        </div>
+                        <div class="email">
+                            <i class="fas fa-envelope"></i> info@company.com
+                        </div>
+                    </div>
+                </div> <!-- Horizontal Line -->
+                <hr class="footer-line"> <!-- Row 4: Copyright -->
+                <div class="footer-bottom">
+                    <p>© 2024 Your Company Name. All rights reserved.</p>
+                </div>
+            </div>
+        </footer> <!-- Floating Button -->
+        <style>
+        document.addEventListener('DOMContentLoaded', () => {
+    const faqList = document.getElementById('faq-list');
+    fetch('/json/faq.json')
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(item => {
+                const faqItem = document.createElement('div');
+                faqItem.classList.add('faq-item');
+                const question = document.createElement('div');
+                question.classList.add('faq-question');
+                question.innerHTML = `${item.question} <i class="fas fa-plus"></i>`;
+                const answer = document.createElement('div');
+                answer.classList.add('faq-answer');
+                answer.innerHTML = `<p>${item.answer}</p>`;
+                faqItem.appendChild(question);
+                faqItem.appendChild(answer);
+                faqList.appendChild(faqItem);
+            });
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                item.querySelector('.faq-question').addEventListener('click', () => {
+                    faqItems.forEach(i => {
+                        if (i !== item) i.classList.remove('active');
+                    });
+                    item.classList.toggle('active');
+                });
+            });
+        })
+        .catch(error => console.error('Error fetching FAQ data:', error));
+});
+</style>
+    </body>
+</html>
