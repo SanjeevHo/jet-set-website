@@ -68,7 +68,7 @@ const Navbar = () => {
             <ul className="sub-menu">
               <li><a href="/p">Jets</a></li>
               <li><a href="/helicopter">Chooper</a></li>
-              <li><a href="/yatch.html">YATCH</a></li>
+              <li><a href="/yacht">YATCH</a></li>
               
               <li><a href="/c">Car</a> </li>
             </ul>
