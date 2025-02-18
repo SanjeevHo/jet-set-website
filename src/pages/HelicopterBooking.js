@@ -149,7 +149,7 @@ const HelicopterBooking = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center">
       <Navbar />
-      <Hero />
+      <Hero backgroundImage="https://assets.gqindia.com/photos/5e14487f23730700087ee228/master/pass/Blade%20India.jpg" />
 
       {/* Helicopter Cards Section */}
       <div className="flex flex-col items-center justify-center min-h-screen">

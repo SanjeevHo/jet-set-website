@@ -24,10 +24,10 @@
 
 import React from "react";
 
-function Hero() {
+function Hero({ backgroundImage }) {
   const heroStyle = {
     height: "450px",
-    backgroundImage: `url(${process.env.PUBLIC_URL}/jet_photo.webp)`,
+    backgroundImage: `url(${backgroundImage})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",

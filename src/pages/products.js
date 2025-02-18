@@ -12,7 +12,7 @@ export default function products() {
     <div>
         <div>
             <Navbar />
-            <Hero />  
+            <Hero backgroundImage={`${process.env.PUBLIC_URL}/jet_photo.webp`} />
             {/* <MainContent /> */}
             <FlightSearch/>
             <ContactForm />

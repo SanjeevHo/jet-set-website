@@ -1,78 +1,51 @@
-import React from 'react';
-import './footer.css'; // Ensure you import the CSS file correctly.
-
-function Footer() {
+const Footer = () => {
   return (
-    <div>
-      <footer id="custom-footer">
-        <div className="footer-container">
-          <div className="footer-row">
-            <div className="footer-column">
-              <div className="footer-logo">
-                <img src="./assets/images/logo.png" alt="Company Logo" />
-              </div>
-            </div>
-            <div className="footer-column footer-description">
-              <p>
-                Your company's tagline or brief description goes here. Highlight your
-                services or mission, providing a brief overview of your expertise.
+    <footer className="bg-blue-900 text-gray-100 py-12 px-5">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <img src="/images/logo.png" alt="Logo" className="h-12 mb-4" />
+            <p className="text-gray-300">Your ultimate destination for luxury yacht experiences.</p>
+          </div>
+          <div>
+            <h3 className="text-xl mb-4">Quick Links</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-gray-300 hover:text-white">About Us</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white">Services</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white">Blog</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl mb-4">Contact Info</h3>
+            <div className="space-y-2 text-gray-300">
+              <p className="flex items-center gap-2">
+                <i className="fas fa-map-marker-alt" /> 123 Luxury Lane, City
+              </p>
+              <p className="flex items-center gap-2">
+                <i className="fas fa-phone" /> +123 456 7890
+              </p>
+              <p className="flex items-center gap-2">
+                <i className="fas fa-envelope" /> info@example.com
               </p>
             </div>
           </div>
-          <div className="footer-row">
-            <div className="footer-column footer-links">
-              <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Careers</a></li>
-              </ul>
+          <div>
+            <h3 className="text-xl mb-4">Follow Us</h3>
+            <div className="flex gap-4">
+              <i className="fab fa-facebook text-2xl hover:text-blue-400 cursor-pointer" />
+              <i className="fab fa-instagram text-2xl hover:text-pink-400 cursor-pointer" />
+              <i className="fab fa-twitter text-2xl hover:text-blue-400 cursor-pointer" />
+              <i className="fab fa-youtube text-2xl hover:text-red-400 cursor-pointer" />
             </div>
-            <div className="footer-column footer-links">
-              <ul>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Support</a></li>
-              </ul>
-            </div>
-            <div className="footer-column footer-links">
-              <ul>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-              </ul>
-            </div>
-          </div>
-          <hr className="footer-line" />
-          <div className="footer-row">
-            <div className="footer-column social-icons">
-              <a href="#"><i className="fab fa-whatsapp"></i></a>
-              <a href="#"><i className="fab fa-facebook"></i></a>
-              <a href="#"><i className="fab fa-instagram"></i></a>
-              <a href="#"><i className="fab fa-twitter"></i></a>
-              <a href="#"><i className="fab fa-youtube"></i></a>
-            </div>
-            <div className="footer-column contact-info">
-              <div className="location">
-                <i className="fas fa-map-marker-alt"></i> 123 Luxury Lane, City, Country
-              </div>
-              <div className="phone">
-                <i className="fas fa-phone-alt"></i> +123 456 7890
-              </div>
-              <div className="email">
-                <i className="fas fa-envelope"></i> info@company.com
-              </div>
-            </div>
-          </div>
-          <hr className="footer-line" />
-          <div className="footer-bottom">
-            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
           </div>
         </div>
-      </footer>
-      
-    </div>
+        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+          <p>© 2024 Yacht Booking. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   );
-}
+};
 
 export default Footer;

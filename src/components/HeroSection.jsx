@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import anime from 'animejs';
+import React, { useState, useEffect } from "react";
+import anime from "animejs";
 
 const HeroSection = () => {
   const titles = [
@@ -15,132 +15,58 @@ const HeroSection = () => {
   ];
 
   const images = [
-    "url('/images/hero-jet-bg.jpg')", 
-    "url('/images/hero-yacht-bg.jpg')",
-    "url('/images/hero-car-bg.jpg')" 
+    "/images/hero-jet-bg.jpg",
+    "/images/hero-yacht-bg.jpg",
+    "/images/hero-car-bg.jpg"
   ];
 
-  const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
-
-  const changeTitle = () => {
-    const heroTitle = document.querySelector('.hero-title');
-    const heroDescription = document.querySelector('.hero-description');
-    const heroSection = document.querySelector('.hero');
-
-    // Change title, description and background
-    heroTitle.textContent = titles[currentTitleIndex];
-    heroDescription.textContent = descriptions[currentTitleIndex];
-    heroTitle.style.opacity = 0;
-    heroDescription.style.opacity = 0;
-
-    if (window.innerWidth > 768) {
-      heroSection.style.backgroundImage = images[currentTitleIndex];
-    }
-
-    // Animation logic (using animejs)
-    const animations = [
-      {
-        targets: heroTitle,
-        opacity: [0, 1],
-        translateY: [20, 0],
-        duration: 2000,
-        easing: 'easeInOutSine',
-        complete: function () {
-          anime({
-            targets: heroTitle,
-            opacity: [1, 0],
-            translateY: [0, -20],
-            duration: 2000,
-            easing: 'easeInOutSine',
-            complete: function () {
-              setCurrentTitleIndex((currentTitleIndex + 1) % titles.length);
-              resetHeroTitle();
-              setTimeout(changeTitle, 1000);
-            }
-          });
-        }
-      },
-      {
-        targets: heroTitle,
-        opacity: [0, 1],
-        translateX: [-50, 0],
-        duration: 2000,
-        easing: 'easeInOutSine',
-        complete: function () {
-          anime({
-            targets: heroTitle,
-            opacity: [1, 0],
-            translateX: [0, 50],
-            duration: 2000,
-            easing: 'easeInOutSine',
-            complete: function () {
-              setCurrentTitleIndex((currentTitleIndex + 1) % titles.length);
-              resetHeroTitle();
-              setTimeout(changeTitle, 2000);
-            }
-          });
-        }
-      },
-      {
-        targets: heroTitle,
-        opacity: [0, 1],
-        scale: [0.5, 1],
-        duration: 2000,
-        easing: 'easeInOutSine',
-        complete: function () {
-          anime({
-            targets: heroTitle,
-            opacity: [1, 0],
-            scale: [1, 0.5],
-            duration: 2000,
-            easing: 'easeInOutSine',
-            complete: function () {
-              setCurrentTitleIndex((currentTitleIndex + 1) % titles.length);
-              resetHeroTitle();
-              setTimeout(changeTitle, 500);
-            }
-          });
-        }
-      }
-    ];
-
-    anime(animations[currentTitleIndex]);
-
-    anime({
-      targets: heroDescription,
-      opacity: [0, 1],
-      duration: 2000,
-      easing: 'easeInOutSine',
-      delay: 500
-    });
-  };
-
-  const resetHeroTitle = () => {
-    const heroTitle = document.querySelector('.hero-title');
-    heroTitle.style.transform = 'translate(0, 0) scale(1)';
-    heroTitle.style.transition = 'none';
-  };
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    changeTitle();
-    window.addEventListener('resize', () => {
-      const heroSection = document.querySelector('.hero');
-      heroSection.style.backgroundImage =
-        window.innerWidth > 768 ? images[currentTitleIndex] : 'none';
+    const heroSection = document.querySelector(".hero");
+    heroSection.style.backgroundImage = `url(${images[currentIndex]})`;
+    heroSection.style.transition = "background-image 1s ease-in-out";
+    
+    anime({
+      targets: ".hero-title",
+      opacity: [0, 1],
+      translateY: [20, 0],
+      duration: 1000,
+      easing: "easeInOutQuad"
     });
-  }, [currentTitleIndex]);
+
+    anime({
+      targets: ".hero-description",
+      opacity: [0, 1],
+      duration: 1200,
+      easing: "easeInOutQuad",
+      delay: 300
+    });
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % titles.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [currentIndex]);
 
   return (
-    <section className="hero">
-      <div className="hero-overlay"></div>
-      <div className="hero-content">
-        <h1 className="hero-title">Experience Luxury in the Skies</h1>
-        <p className="hero-description">
-          Book your private jet and enjoy unparalleled comfort and service.
+    <section className="hero relative w-full h-screen flex items-center justify-center text-white bg-cover bg-center transition-all duration-1000">
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div className="relative z-10 text-center max-w-3xl px-6">
+        <h1 className="hero-title text-4xl md:text-6xl font-bold leading-tight mb-4 animate-fade-in">
+          {titles[currentIndex]}
+        </h1>
+        <p className="hero-description text-lg md:text-xl opacity-80 mb-6 animate-fade-in">
+          {descriptions[currentIndex]}
         </p>
-        <div className="cta-buttons">
-          <a href="#book" className="cta-button">Book Now</a>
-          <a href="#learn-more" className="cta-button secondary">Learn More</a>
+        <div className="flex gap-4 justify-center">
+          <a href="#book" className="px-6 py-3 bg-red-600 hover:bg-red-700 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg">
+            Book Now
+          </a>
+          <a href="#learn-more" className="px-6 py-3 border border-white hover:bg-white hover:text-black rounded-full text-lg font-semibold transition-all duration-300 shadow-lg">
+            Learn More
+          </a>
         </div>
       </div>
     </section>
