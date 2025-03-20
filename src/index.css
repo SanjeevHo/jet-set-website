@@ -283,7 +283,7 @@ nav label.bars {
 }
 25% {
     left: 50%;
-    /* Change this to control the mid-point of the animation*/
+
     
 }
 50% {
@@ -291,7 +291,7 @@ nav label.bars {
 }
 75% {
     left: 50%;
-    /* Adding this for a smoother return*/
+
     
 }
 100% {
@@ -341,7 +341,7 @@ nav label.bars {
     max-width: 1200px;
     margin: 0 auto;
 }
-/* Row styling for desktop*/
+
     .footer-row {
     display: flex;
     justify-content: space-between;
@@ -366,7 +366,7 @@ nav label.bars {
     background: #66B2FF;
     margin: 20px 0;
 }
-/* Footer links columns*/
+
     .footer-links ul {
     list-style: none;
     padding: 0;
@@ -383,7 +383,7 @@ nav label.bars {
 .footer-links ul li a:hover {
     color: #66B2FF;
 }
-/* Social icons section*/
+
     .social-icons a {
     margin-right: 15px;
     font-size: 20px;
@@ -393,7 +393,7 @@ nav label.bars {
 .social-icons a:hover {
     color: #66B2FF;
 }
-/* Contact information section*/
+
     .contact-info {
     font-size: 16px;
 }
@@ -403,7 +403,7 @@ nav label.bars {
 .contact-info i {
     margin-right: 10px;
 }
-/* Footer bottom*/
+
     .footer-bottom {
     text-align: center;
     margin-top: 20px;
@@ -483,11 +483,7 @@ nav label.bars {
     fill: none;
     stroke: url(#grad1);
 }
-<svg width="0" height="0"> <defs> <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"> <stop offset="0%" style="stop-color:#ff66cc;
-    stop-opacity:1" /> <stop offset="50%" style="stop-color:#ff9933;
-    stop-opacity:1" /> <stop offset="100%" style="stop-color:#66ccff;
-    stop-opacity:1" /> </linearGradient> </defs>
-</svg>
+
 @media (max-width: 768px) {
     .floating-btn {
     width: 60px;
@@ -506,19 +502,19 @@ nav label.bars {
     margin: 50px auto;
     padding: 20px;
     background: #ecf0f3;
-    /* Light background color*/
+ 
     border-radius: 10px;
 }
 .faq-container h1 {
     font-size: 28px;
     margin-bottom: 20px;
     color: #1D2C6D;
-    /* Main theme color*/
+
     text-align: center;
 }
 .faq-item {
     border-bottom: 1px solid #d1d1d1;
-    /* Slightly darker border*/
+
     
 }
 .faq-question {
@@ -530,13 +526,13 @@ nav label.bars {
     font-size: 18px;
     font-weight: bold;
     color: #31344b;
-    /* Dark text color*/
+
     transition: color 0.3s ease;
     position: relative;
 }
 .faq-question:hover {
     color: #3498db;
-    /* Hover color*/
+ 
     
 }
 .faq-question i {
@@ -551,21 +547,21 @@ nav label.bars {
     transition: max-height 0.6s ease, padding 0.6s ease;
     padding: 0 18px;
     background-color: #f9f9f9;
-    /* Slightly off-white background*/
+   
     border-top: 1px solid #d1d1d1;
-    /* Slightly darker border*/
+
     
 }
 .faq-answer p {
     margin: 15px 0;
     line-height: 1.6;
     color: #666;
-    /* Slightly lighter text for answers*/
+ 
     
 }
 .faq-item.active .faq-answer {
     max-height: 200px;
-    /* Adjust based on content*/
+ 
     padding: 18px;
 }
 .faq-item.active .faq-question i {
@@ -588,7 +584,7 @@ nav label.bars {
     width: 100%;
     padding: 40px 20px;
     background-color: #ecf0f3;
-    /* Light Gray Background*/
+
     border-radius: 10px;
     max-width: 1200px;
     margin: auto;
@@ -599,7 +595,7 @@ nav label.bars {
     font-size: 28px;
     margin-bottom: 45px;
     color: #003366;
-    /* Deep Blue*/
+
     text-align: center;
 }
 .testimonial-section .swiper-container {
@@ -614,16 +610,16 @@ nav label.bars {
     width: 100%;
     max-width: 350px;
     height: 350px;
-    /* Fixed height*/
+
     padding: 20px;
     border-radius: 10px;
     background: linear-gradient(135deg, #66B2FF 0%, #1D2C6D 100%);
-    /* Light Blue to Deep Blue Gradient*/
+ 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     text-align: center;
     overflow: hidden;
-    /* Prevent overflow for long text*/
+
     
 }
 .testimonial-section .testimonial-card:hover {
@@ -635,59 +631,59 @@ nav label.bars {
     border-radius: 50%;
     margin-bottom: 15px;
     border: 3px solid #FFD700;
-    /* Gold Circle Style*/
+
     
 }
 .testimonial-section .customer-name {
     font-size: 1.2rem;
     color: #FFD700;
-    /* Gold*/
+
     margin-bottom: 10px;
 }
 .testimonial-section .customer-review {
     font-size: 1rem;
     color: #2C2C2C;
-    /* Charcoal Gray for Review Text*/
+ 
     margin-bottom: 10px;
     max-height: 100px;
-    /* Limit height for review*/
+
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
-    /* Limit to 3 lines*/
+  
     
 }
 .testimonial-section .stars {
     font-size: 1.2rem;
     color: #FFD700;
-    /* Gold for Stars*/
+  
     margin-bottom: 10px;
 }
 .testimonial-section .review-date {
     font-size: 0.9rem;
     color: #2C2C2C;
-    /* Charcoal Gray for Date*/
+
     margin-bottom: 10px;
-    /* Added space between date and pagination*/
+ 
     
 }
 .testimonial-section .swiper-pagination {
     margin-top: 30px;
-    /* Increased space between date and pagination*/
+   
     
 }
 .testimonial-section .swiper-button-next,
 .testimonial-section .swiper-button-prev {
     background-color: #003366;
-    /* Deep Blue for Buttons*/
+
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     width: 40px;
     height: 40px;
     color: #fff;
-    /* White for Button Icons*/
+
     
 }
 .testimonial-section .swiper-button-next {
@@ -701,10 +697,10 @@ nav label.bars {
 }
 .testimonial-section .swiper-pagination-bullet-active {
     background-color: #003366;
-    /* Deep Blue for Active Bullet*/
+
     
 }
-/* Responsive*/
+
     @media (max-width: 768px) {
     .testimonial-section .swiper-slide {
     width: 100%;
@@ -763,13 +759,13 @@ nav label.bars {
     color: #ccc;
     line-height: 1.6;
 }
-/* Responsive adjustments*/
+
     @media (max-width: 768px) {
     .features-cyberzoneacademy {
     grid-template-columns: 1fr;
 }
 }
-/* Custom animation using CSS*/
+
     .animate-fade-in {
     opacity: 0;
     transform: translateY(50px);
@@ -868,7 +864,7 @@ nav label.bars {
     border-radius: 50px;
     transform: rotate(15deg);
 }
-/* Responsive adjustments*/
+
     @media (max-width: 768px) {
     .offers {
     grid-template-columns: 1fr;
@@ -883,20 +879,20 @@ nav label.bars {
     height: 80px;
     z-index: 999;
     cursor: pointer;
-    display: flex; /* Ensure this is flex to center the content */
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     background-color: #003366;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, background-color 0.3s ease;
-    display: none; /* Initially hidden */
+    display: none;
 }
 
 .show {
-    display: flex; /* This will make it visible */
+    display: flex;
 }
 
 
 
-/* Navbar Container */
+

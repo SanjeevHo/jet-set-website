@@ -1,4 +1,4 @@
-/* Main Container */
+
 .container {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -6,7 +6,7 @@
     padding: 20px;
   }
   
-  /* Search Bar */
+
   .search-bar {
     display: flex;
     gap: 10px;
@@ -36,10 +36,10 @@
     background-color: #0056b3;
   }
   
-  /* Cards */
+ 
   .card-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Ensures 3 cards per row */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     justify-content: center;
   }
@@ -105,7 +105,7 @@
   
   .card-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Ensures 3 cards per row */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     justify-content: center;
   }

@@ -1,6 +1,19 @@
-resolve: {
+const path = require('path');
+
+module.exports = {
+  resolve: {
     fallback: {
-      os: false // This tells Webpack to not look for the 'os' module.
-    }
-  }
+      os: false, // Disable the 'os' module
+    },
+  },
+  optimization: {
+    minimize: false, // Disable minimization
+  },
+  module: {
+    rules: [
+      // Add rules for processing your CSS files here if needed
+    ],
+  },
+};
+
   

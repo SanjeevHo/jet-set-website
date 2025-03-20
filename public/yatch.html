@@ -260,7 +260,6 @@ nav label.bars {
     white-space: nowrap;
 }
 }
-
         .hero {
             position: relative;
             width: 100%;
@@ -273,7 +272,6 @@ nav label.bars {
             color: #fff;
             overflow: hidden;
         }
-
         /* Semi-transparent black overlay */
         .hero-overlay {
             position: absolute;
@@ -284,22 +282,18 @@ nav label.bars {
             background-color: rgba(0, 0, 0, 0.5); /* 50% transparent black */
             z-index: 1; /* Make sure overlay is behind content */
         }
-
         .hero-content {
             z-index: 2;
             padding: 20px;
         }
-
         .hero h1 {
             font-size: 3em;
             margin-bottom: 20px;
         }
-
         .hero p {
             font-size: 1.2em;
             margin-bottom: 40px;
         }
-
         .cta-btn {
             padding: 15px 30px;
             font-size: 1.2em;
@@ -311,11 +305,9 @@ nav label.bars {
             text-transform: uppercase;
             transition: background-color 0.3s ease;
         }
-
         .cta-btn:hover {
             background-color: #0088cc;
         }
-
         /* Desktop */
         @media (min-width: 768px) {
             .hero {
@@ -324,18 +316,15 @@ nav label.bars {
                 background-position: center;
             }
         }
-
         /* Mobile */
         @media (max-width: 767px) {
             .hero {
                 background-image: none;
                 height: 300px; /* Adjust height for mobile */
             }
-
             .hero h1 {
                 font-size: 2em;
             }
-
             .hero p {
                 font-size: 1em;
             }
@@ -346,20 +335,17 @@ nav label.bars {
         text-align: center;
         background-color: #f4f4f4;
     }
-
     .yacht-specifications h2 {
         font-size: 2.5em;
         margin-bottom: 30px;
         color: #333;
     }
-
     .specs-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
     }
-
     .spec-box {
         background-color: #fff;
         padding: 20px;
@@ -369,28 +355,23 @@ nav label.bars {
         text-align: center;
         transition: transform 0.3s ease;
     }
-
     .spec-box:hover {
         transform: translateY(-5px);
     }
-
     .spec-box i {
         font-size: 3em;
         color: #00aaff;
         margin-bottom: 10px;
     }
-
     .spec-box h3 {
         font-size: 1.5em;
         color: #333;
         margin-bottom: 10px;
     }
-
     .spec-box p {
         font-size: 1.2em;
         color: #666;
     }
-
     /* Responsive Design */
     @media (max-width: 767px) {
         .spec-box {
@@ -404,7 +385,6 @@ nav label.bars {
   background-color: #f9f9f9;
   border-radius: 10px;
 }
-
 .container-book h2 {
   text-align: center;
   margin-bottom: 30px;
@@ -412,25 +392,21 @@ nav label.bars {
   font-size: 2.2rem;
   font-weight: bold;
 }
-
 .booking-form {
   background-color: #fff;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .form-group {
   margin-bottom: 20px;
 }
-
 .form-group label {
   display: block;
   font-size: 1.1rem;
   color: #333;
   margin-bottom: 8px;
 }
-
 .form-group input,
 .form-group select,
 .form-group textarea {
@@ -442,18 +418,15 @@ nav label.bars {
   box-sizing: border-box;
   transition: border-color 0.3s ease;
 }
-
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
   border-color: #007bff;
   outline: none;
 }
-
 .form-group textarea {
   resize: vertical;
 }
-
 .submit-btn {
   display: inline-block;
   background-color: #007bff;
@@ -467,54 +440,43 @@ nav label.bars {
   transition: background-color 0.3s ease;
   box-sizing: border-box;
 }
-
 .submit-btn:hover {
   background-color: #0056b3;
 }
-
 .fas {
   margin-right: 8px;
 }
-
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .container-book {
     width: 90%;
   }
-
   .form-group {
     display: block;
     width: 100%;
   }
-
   .submit-btn {
     padding: 12px 20px;
   }
-
   .form-group input,
   .form-group select,
   .form-group textarea {
     width: 100%;
   }
 }
-
 /* Row Layout for Larger Forms */
 @media (min-width: 768px) {
-
   .form-group label {
     width: 25%;
   }
-
   .form-group input,
   .form-group select,
   .form-group textarea {
     width: 100%;
   }
-
   .form-group textarea {
     width: 100%;
   }
-
   .form-group.long-input input,
   .form-group.long-input select,
   .form-group.long-input textarea {
@@ -903,28 +865,22 @@ nav label.bars {
         <style>
         document.addEventListener('DOMContentLoaded', () => {
     const faqList = document.getElementById('faq-list');
-
     fetch('/json/faq.json')
         .then(response => response.json())
         .then(data => {
             data.forEach(item => {
                 const faqItem = document.createElement('div');
                 faqItem.classList.add('faq-item');
-
                 const question = document.createElement('div');
                 question.classList.add('faq-question');
                 question.innerHTML = `${item.question} <i class="fas fa-plus"></i>`;
-
                 const answer = document.createElement('div');
                 answer.classList.add('faq-answer');
                 answer.innerHTML = `<p>${item.answer}</p>`;
-
                 faqItem.appendChild(question);
                 faqItem.appendChild(answer);
-
                 faqList.appendChild(faqItem);
             });
-
             const faqItems = document.querySelectorAll('.faq-item');
             faqItems.forEach(item => {
                 item.querySelector('.faq-question').addEventListener('click', () => {
