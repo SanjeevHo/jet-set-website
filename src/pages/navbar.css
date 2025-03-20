@@ -1,4 +1,4 @@
-/* Navbar.css */
+
 nav {
     position: fixed;
     top: 0;
@@ -70,7 +70,7 @@ nav {
     background: #1d4ed8;
   }
   
-  /* Dropdown Menu */
+
   .sub-menu {
     position: absolute;
     top: 100%;
@@ -108,7 +108,7 @@ nav {
     background: #f3f4f6;
   }
   
-  /* Mobile Menu */
+
   #check, .btn {
     display: none;
   }

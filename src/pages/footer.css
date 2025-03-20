@@ -1,4 +1,4 @@
-/* Footer CSS */
+
 
 #custom-footer {
     background-color: #003366;
@@ -12,7 +12,7 @@
     margin: 0 auto;
   }
   
-  /* Row styling for desktop */
+  
   .footer-row {
     display: flex;
     justify-content: space-between;
@@ -42,7 +42,7 @@
     margin: 20px 0;
   }
   
-  /* Footer links columns */
+ 
   .footer-links ul {
     list-style: none;
     padding: 0;
@@ -63,7 +63,7 @@
     color: #66B2FF;
   }
   
-  /* Social icons section */
+
   .social-icons a {
     margin-right: 15px;
     font-size: 20px;
@@ -75,7 +75,7 @@
     color: #66B2FF;
   }
   
-  /* Contact information section */
+
   .contact-info {
     font-size: 16px;
   }
@@ -88,7 +88,7 @@
     margin-right: 10px;
   }
   
-  /* Footer bottom */
+
   .footer-bottom {
     text-align: center;
     margin-top: 20px;

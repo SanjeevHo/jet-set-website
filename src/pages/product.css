@@ -4,17 +4,17 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-/* products.css */
+
 .products-container {
-    min-height: 100vh; /* Full viewport height */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Ensures footer stays at the bottom */
+    justify-content: space-between; 
   }
   
   .content {
-    flex: 1; /* Takes up all available space */
+    flex: 1;
     padding: 20px;
-    background: #fff; /* Example background color for visibility */
+    background: #fff;
   }
   

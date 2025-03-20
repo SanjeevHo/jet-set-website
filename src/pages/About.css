@@ -2,19 +2,19 @@
     font-family: Arial, sans-serif;
   }
   
-  /* Hero Section */
+
   .hero-section {
     height: 80vh;
     background-image: url('https://cdnwebsite.databox.com/wp-content/uploads/2020/12/01062702/about-us-page-examples.png'); 
-    background-size: cover; /* Ensures the image covers the entire section */
+    background-size: cover; 
     background-position: center;
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: .9;
     text-align: center;
-    padding: 0 20px; /* Padding for better layout on smaller screens */
+    padding: 0 20px;
   }
   
   .hero-titles {
@@ -30,10 +30,10 @@
     margin-top: 10px;
   }
   
-  /* Info Section */
+
   .info {
     padding: 50px 20px;
-    background-color: #f9f9f9; /* Light background for the info section */
+    background-color: #f9f9f9; 
     text-align: center;
   }
   
@@ -44,17 +44,17 @@
     margin: 0 auto;
     padding: 40px 20px;
     color: #333;
-    background-color: #f4f4f4; /* Light background for contrast */
-    border-left: 5px solid #007bff; /* Left border for emphasis */
+    background-color: #f4f4f4;
+    border-left: 5px solid #007bff; 
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
   }
   
   .about-company p {
-    margin-bottom: 1rem; /* Spacing between paragraphs */
+    margin-bottom: 1rem; 
   }
   
-  /* Mission Section */
+
   .mission-section {
     padding: 50px;
     text-align: center;
@@ -73,7 +73,7 @@
     line-height: 1.6;
   }
   
-  /* Team Section */
+
   .team-section {
     padding: 50px;
     background-color: #fff;
@@ -92,14 +92,14 @@
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap; /* Allows the grid to wrap on smaller screens */
+    flex-wrap: wrap; 
   }
   
   .team-member {
     text-align: center;
     flex: 1;
     max-width: 250px;
-    margin-bottom: 20px; /* Added margin for better spacing on small screens */
+    margin-bottom: 20px; 
   }
   
   .team-img {
@@ -118,19 +118,19 @@
     color: gray;
   }
   
-  /* Flip Card Container */
+
   .flip-card {
     background-color: transparent;
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
-    perspective: 1000px; /* Allows 3D transformations */
+    perspective: 1000px; 
   }
   
   .flip-card-inner {
     position: relative;
     width: 100%;
-    height: 300px; /* Adjust height as needed */
+    height: 300px;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -145,12 +145,12 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden; 
     backface-visibility: hidden;
   }
   
   .flip-card-front {
-    background-color: rgba(0, 0, 0, 0.1); /* Front card color */
+    background-color: rgba(0, 0, 0, 0.1); 
     color: black;
     display: flex;
     flex-direction: column;
@@ -161,7 +161,7 @@
   }
   
   .flip-card-back {
-    background-color: #f4f4f4; /* Back card color */
+    background-color: #f4f4f4; 
     color: black;
     transform: rotateY(180deg);
     display: flex;
@@ -172,7 +172,7 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
-  /* Responsive Design */
+
   @media (max-width: 768px) {
     .hero-title {
       font-size: 2.5rem;
@@ -218,67 +218,66 @@
     }
   }
   
-  /* Timeline Section Styles */
+
   .timeline-section {
-    background-color: #f9f9f9; /* Light background for contrast */
-    padding: 50px 20px; /* Add padding for spacing */
-    text-align: center; /* Center the text */
+    background-color: #f9f9f9; 
+    padding: 50px 20px;
+    text-align: center; 
   }
   
   .section-title {
-    font-size: 2.5em; /* Increase font size for section title */
-    margin-bottom: 30px; /* Space below the title */
-    color: #333; /* Dark text color */
+    font-size: 2.5em; 
+    margin-bottom: 30px;
+    color: #333;
   }
   
   .timeline {
-    position: relative; /* Allow absolute positioning of items */
-    max-width: 800px; /* Max width for the timeline */
-    margin: 0 auto; /* Center the timeline */
-    padding: 20px; /* Padding around the timeline */
+    position: relative;
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
   }
   
-  /* Vertical line style */
+
   .timeline::after {
     content: '';
-    position: absolute; /* Position it absolutely */
-    left: 18px; /* Align to the left */
-    top: 0; /* Start from the top */
-    bottom: 0; /* Extend to the bottom */
-    width: 4px; /* Width of the line */
-    background: #007BFF; /* Line color */
-    z-index: 1; /* Place line below circle */
+    position: absolute; 
+    left: 18px; 
+    top: 0; 
+    bottom: 0;
+    width: 4px; 
+    background: #007BFF; 
+    z-index: 1; 
   }
   
   .timeline-item {
-    position: relative; /* Position relative for absolute child */
-    margin: 20px 0; /* Space between items */
-    padding-left: 30px; /* Space for the line */
+    position: relative; 
+    margin: 20px 0; 
+    padding-left: 30px;
   }
   
   .timeline-item h3 {
-    font-size: 1.5em; /* Font size for year */
-    color: #007BFF; /* Color for the year */
-    margin: 0; /* Remove default margin */
+    font-size: 1.5em; 
+    color: #007BFF; 
+    margin: 0; 
   }
   
   .timeline-item p {
-    font-size: 1.1em; /* Font size for description */
-    color: #555; /* Gray text color */
-    margin: 5px 0 0; /* Spacing above */
+    font-size: 1.1em; 
+    color: #555;
+    margin: 5px 0 0; 
   }
   
-  /* Add circle for each timeline item */
+  
   .timeline-item::before {
     content: '';
-    position: absolute; /* Position it absolutely */
-    left: -10px; /* Position to the left of the text */
-    top: 0; /* Align with top */
-    width: 20px; /* Width of the circle */
-    height: 20px; /* Height of the circle */
-    border-radius: 50%; /* Make it circular */
-    background: #fff; /* Circle color */
-    border: 4px solid #007BFF; /* Blue border for the circle */
-    z-index: 2; /* Place circle above the line */
+    position: absolute; 
+    left: -10px;
+    top: 0; 
+    width: 20px; 
+    border-radius: 50%;
+    background: #fff; 
+    border: 4px solid #007BFF; 
+    z-index: 2; 
   }
   
